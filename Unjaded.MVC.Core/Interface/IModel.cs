@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Unjaded.MVC.Core
+namespace Unjaded.Core.MVC
+{ 
     public interface IModel
     {
         DateTime CreatedDate { get; set; }
@@ -12,6 +13,6 @@ namespace Unjaded.MVC.Core
         bool IsActive { get; set; }
         int? CreatedSessionID { get; set; }
         int? ModifySessionID { get; set; }
-
+        
     }
 }

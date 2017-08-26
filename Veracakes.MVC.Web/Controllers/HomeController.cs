@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Unjaded.Core.MVC;
+using Unjaded.MVC.Core;
 
 namespace Veracakes.MVC.Web.Controllers
 {
@@ -10,6 +12,9 @@ namespace Veracakes.MVC.Web.Controllers
     {
         public ActionResult Index()
         {
+            MagnifyingGlass x = new MagnifyingGlass();
+            int tops = x.Rings;
+
             return View();
         }
 
