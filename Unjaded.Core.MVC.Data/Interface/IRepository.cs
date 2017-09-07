@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Unjaded.Core.MVC.Data
 {
-    interface IRepository
+    public interface IRepository<T>
     {
+        T Get<Tkey>(Tkey id);
+        T Get<TKey, Ukey>(TKey paramOne, Ukey paramTwo);
+        IQueryable<T> GetAll();
+        void Add(T entity);
+        void Update(T entity);
+        IQueryable<T> AllActiveItems();
+        IEnumerable<T> GetInfo();
+        List<T> ActiveItems();
+        IQueryable<T> FindBy(System.Linq.Expressions.Expression<Func<T, bool>> predicate);
+        void Save();
     }
 }

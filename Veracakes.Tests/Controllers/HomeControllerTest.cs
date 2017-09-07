@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Veracakes;
-using Veracakes.Controllers;
+using Veracakes.MVC.Web.Controllers;
 
 namespace Veracakes.Tests.Controllers
 {

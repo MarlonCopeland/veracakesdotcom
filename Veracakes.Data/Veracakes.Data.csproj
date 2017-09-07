@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Customers.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\PastryDesign.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,6 +55,19 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Unjaded.Core.MVC.Data\Unjaded.Core.MVC.Data.csproj">
+      <Project>{8ccc7865-b8cb-4d1c-a1be-faa1362765ab}</Project>
+      <Name>Unjaded.Core.MVC.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unjaded.MVC.Core\Unjaded.Core.MVC.csproj">
+      <Project>{4a78c06f-ee43-40a7-9bbb-2db99d5bf927}</Project>
+      <Name>Unjaded.Core.MVC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

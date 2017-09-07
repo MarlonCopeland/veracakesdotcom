@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\ModelBase.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Interface\IEnumerableExtensions.cs" />
     <Compile Include="Interface\IModel.cs" />
@@ -47,7 +48,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Base\" />
     <Folder Include="Collections\" />
     <Folder Include="Constants\" />
     <Folder Include="Models\Base\" />

@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Unjaded.Core.MVC;
-using Unjaded.Core.MVC.Data;
+
 
 namespace Veracakes.Data
 {
-    [Table("PastryDesign")]
-    public class PastryDesign : ModelBase
+    [Table("Customer")]
+    public abstract class Customer : ModelBase
     {
-        public PastryDesign() : base() { }
+        public Customer() : base() { }
 
-        public PastryDesign(string firstName, string lastName, string email, string phoneNumber, string addressLine1, string addressLine2,
+        public Customer(string firstName, string lastName, string email, string phoneNumber, string addressLine1, string addressLine2, 
             string city, string state, string zip, int )
             : base()
         {
@@ -63,11 +63,12 @@ namespace Veracakes.Data
         [Display(Name = "City")]
         public string City { get; set; }
 
-        [Display(Name = "State")]
+        [Display(Name ="State")]
         public string State { get; set; }
 
         [Display(Name = "Zip Code")]
         public string ZipCode { get; set; }
+
+        
     }
-}
 }
