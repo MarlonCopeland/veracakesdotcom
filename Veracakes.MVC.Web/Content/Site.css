@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: turquoise;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +22,14 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.cakerowpic img {
+    height: 9.8em;
+    width: 9.8em;
+}
+
+.cakerowpic {
+    height: 10em;
+    width: 10em;
 }
