@@ -47,10 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201710311826233_FirstMigrationEver.cs" />
+    <Compile Include="Migrations\201710311826233_FirstMigrationEver.Designer.cs">
+      <DependentUpon>201710311826233_FirstMigrationEver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\PastryDesign.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CustomersRepository.cs" />
+    <Compile Include="Repositories\OrdersRepository.cs" />
+    <Compile Include="Repositories\PastryDesignRepository.cs" />
     <Compile Include="VeraCakesDBContext.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,7 +76,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repositories\" />
+    <EmbeddedResource Include="Migrations\201710311826233_FirstMigrationEver.resx">
+      <DependentUpon>201710311826233_FirstMigrationEver.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

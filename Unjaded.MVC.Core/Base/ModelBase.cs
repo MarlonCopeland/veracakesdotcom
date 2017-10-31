@@ -13,6 +13,7 @@ namespace Unjaded.Core.MVC
         {
             CreatedDate = DateTime.Now;
             IsActive = true;
+            CreatedSessionID = CreatedSessionID;
         }
 
         public DateTime CreatedDate { get; set; }

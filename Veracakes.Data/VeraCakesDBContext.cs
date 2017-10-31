@@ -4,11 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace Veracakes.Data
 {
-    class VeraCakesDBContext: DbContext
+    public class VeraCakesDBContext : DbContext
     {
+        public VeraCakesDBContext() : base() { }
+
+        public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<PastryDesign> PastryDesigns { get; set; }
 
     }
 }

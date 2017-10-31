@@ -11,12 +11,12 @@ using Unjaded.Core.MVC;
 namespace Veracakes.Data
 {
     [Table("Customer")]
-    public abstract class Customer : ModelBase
+    public class Customer : ModelBase
     {
         public Customer() : base() { }
 
         public Customer(string firstName, string lastName, string email, string phoneNumber, string addressLine1, string addressLine2, 
-            string city, string state, string zip, int )
+            string city, string state, string zip)
             : base()
         {
             FirstName = firstName;
@@ -31,24 +31,21 @@ namespace Veracakes.Data
 
             IsActive = true;
             CreatedDate = DateTime.Now;
-            CreatedSessionID = CreatedSessionID;
-
+           
         }
 
         [Key]
-        [Display(Name = "Customer ID"]
+        [Display(Name = "Customer ID")]
         public int CustomerID { get; set; }
 
-        [MaxLength(30)]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
-        [MaxLength(30)]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
-        [EmailAddress]
-        [Display(Name = "Email"]
+        //TODO: Validate Email regex on client
+        [Display(Name = "Email")]
         public string Email { get; set; }
 
         [Display(Name = "Phone Number")]
