@@ -8,12 +8,10 @@ using Unjaded.MVC.Core;
 
 namespace Veracakes.MVC.Web.Controllers
 {
-    public class HomeController : Controller
+    public class OrderController : Controller
     {
         public ActionResult Index()
         {
-           
-           
 
             return View();
         }
@@ -25,7 +23,7 @@ namespace Veracakes.MVC.Web.Controllers
             return View();
         }
 
-        public ActionResult ContactUs()
+        public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
