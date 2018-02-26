@@ -232,6 +232,8 @@
     <Content Include="Views\Orders\Edit.cshtml" />
     <Content Include="Views\Orders\Index.cshtml" />
     <Content Include="Views\Home\Partial\cakesPartial.cshtml" />
+    <Content Include="Views\Home\Partial\contactPartial.cshtml" />
+    <Content Include="Views\Home\Partial\orderPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

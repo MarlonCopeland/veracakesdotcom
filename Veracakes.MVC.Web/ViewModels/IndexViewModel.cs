@@ -9,9 +9,10 @@ namespace Veracakes.MVC.Web
     {
         public IndexViewModel()
         {
-
+            contact = new ContactViewModel();
         }
 
         public CakePage cakePage { get; set; }
+        public ContactViewModel contact { get; set; }
     }
 }

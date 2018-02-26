@@ -17,18 +17,5 @@
 <div class="tab-content col-lg-12">
 <div id="contentYum" class="tab-pane active">@Html.Partial("~/Views/Home/Partial/cakesPartial.cshtml", Model.cakePage)</div>
 <div id="contentOrder" class="tab-pane">@Html.Partial("~/Views/Home/Partial/orderPartial.cshtml", Model.cakePage)</div>
-<div id="contentContact" class="tab-pane">@Html.Partial("~/Views/Home/Partial/contactPartial.cshtml", Model.cakePage)</div>
-</div>
-
-<nav>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
-    </div>
-</nav>
-<div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+<div id="contentContact" class="tab-pane">@Html.Partial("~/Views/Home/Partial/contactPartial.cshtml", Model.contact)</div>
 </div>
