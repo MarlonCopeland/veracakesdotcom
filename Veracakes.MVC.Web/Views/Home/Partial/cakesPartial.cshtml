@@ -1,0 +1,9 @@
+﻿@model Veracakes.MVC.Web.CakePage
+<div class="wrapper">
+    @foreach (string s in Model.lstCakes)
+    {
+        <div class="box">
+            <img class="cakerowpic" src="~/Content/images/cakePics/@(s)" title="@(s)" />
+        </div>
+    }
+</div>

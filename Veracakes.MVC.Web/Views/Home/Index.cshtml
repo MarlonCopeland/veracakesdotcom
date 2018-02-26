@@ -1,42 +1,34 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿@model Veracakes.MVC.Web.IndexViewModel
 
-<div class="jumbotron">
-    <h1>Veracakes</h1>
-    <p class="lead">You can get a great cake made here! Order Now</p>
-    <p>@Html.ActionLink("Order A Cake","Contact")</p>
+@{
+    ViewBag.Title = "Vercakes - All the best here!";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+
+<div>
+    <ul class="nav nav-tabs col-lg-12">
+        <li class="nav-item navbar-link active col-lg-4" data-toggle="tab" href="#contentYum" role="tab">Yum!</li>
+        <li class="nav-item navbar-link col-lg-4" data-toggle="tab" href="#contentOrder" role="tab">Order</li>
+        <li class="nav-item navbar-link col-lg-4" data-toggle="tab" href="#contentContact" role="tab">Contact</li>
+    </ul>
+</div>
+<div class="tab-content col-lg-12">
+<div id="contentYum" class="tab-pane active">@Html.Partial("~/Views/Home/Partial/cakesPartial.cshtml", Model.cakePage)</div>
+<div id="contentOrder" class="tab-pane">@Html.Partial("~/Views/Home/Partial/orderPartial.cshtml", Model.cakePage)</div>
+<div id="contentContact" class="tab-pane">@Html.Partial("~/Views/Home/Partial/contactPartial.cshtml", Model.cakePage)</div>
 </div>
 
-
-<div class="row">
-    <div class="row">
-        <div class="cakerowpic col-sm-1"><img src="~/Content/images/adventuretimecake.jpg" alt="Alternate Text" /></div>
-        <div class="cakerowpic col-sm-1"><img src="~/Content/images/batmancake.jpg" alt="Alternate Text" /></div>
-        <div class="cakerowpic col-sm-1"><img src="~/Content/images/chanelcake.jpg" alt="Alternate Text" /></div>
-        <div class="cakerowpic col-sm-1"><img src="~/Content/images/dadcake.jpg" alt="Alternate Text" /></div>
-        <div class="cakerowpic col-sm-1"><img src="~/Content/images/designercake.jpg" alt="Alternate Text" /></div>
-        <div class="cakerowpic col-sm-1"><img src="~/Content/images/elmocake.jpg" alt="Alternate Text" /></div>
-        <div class="cakerowpic col-sm-1"><img src="~/Content/images/ponycake.jpg" alt="Alternate Text" /></div>
-        <div class="cakerowpic col-sm-1"><img src="~/Content/images/princesscake.jpg" alt="Alternate Text" /></div>
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
     </div>
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
 </div>
