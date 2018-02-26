@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veracakes.Tests", "Veracakes.Tests\Veracakes.Tests.csproj", "{932F6ECD-400E-49C8-87FA-F2D6885346F0}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unjaded.Core.MVC.Data", "Unjaded.Core.MVC.Data\Unjaded.Core.MVC.Data.csproj", "{8CCC7865-B8CB-4D1C-A1BE-FAA1362765AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veracakes.MVC.Web", "Veracakes.MVC.Web\Veracakes.MVC.Web.csproj", "{880D1C46-7ACB-4D4A-B741-05A6FEC781E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unjaded.Core", "Unjaded.Core\Unjaded.Core.csproj", "{585E16CB-5DAB-44FD-8310-D025C51D602D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,8 +41,15 @@ Global
 		{880D1C46-7ACB-4D4A-B741-05A6FEC781E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{880D1C46-7ACB-4D4A-B741-05A6FEC781E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{880D1C46-7ACB-4D4A-B741-05A6FEC781E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{585E16CB-5DAB-44FD-8310-D025C51D602D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{585E16CB-5DAB-44FD-8310-D025C51D602D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{585E16CB-5DAB-44FD-8310-D025C51D602D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{585E16CB-5DAB-44FD-8310-D025C51D602D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1660D332-D083-4E2A-9DB6-5FD1FA6D1118}
 	EndGlobalSection
 EndGlobal

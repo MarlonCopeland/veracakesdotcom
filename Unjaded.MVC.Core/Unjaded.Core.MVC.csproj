@@ -41,7 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\ModelBase.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Interface\IEnumerableExtensions.cs" />
     <Compile Include="Interface\IModel.cs" />
     <Compile Include="Interface\IValidatable.cs" />
