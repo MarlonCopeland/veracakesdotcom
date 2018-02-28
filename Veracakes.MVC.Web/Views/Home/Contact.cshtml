@@ -1,19 +1,10 @@
 ﻿@model Veracakes.MVC.Web.ContactViewModel
 
-@{ 
-    ViewBag.Title = "Contact";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
-<h2>Contact</h2>
-
-
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>Contact</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">

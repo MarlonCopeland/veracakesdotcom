@@ -9,13 +9,13 @@
 
 <div>
     <ul class="nav nav-tabs col-lg-12">
-        <li class="nav-item navbar-link active col-lg-4" data-toggle="tab" href="#contentYum" role="tab">Yum!</li>
-        <li class="nav-item navbar-link col-lg-4" data-toggle="tab" href="#contentOrder" role="tab">Order</li>
-        <li class="nav-item navbar-link col-lg-4" data-toggle="tab" href="#contentContact" role="tab">Contact</li>
+        <li class="nav-item navbar-link active col-xs-4 mainnav" data-toggle="tab" href="#contentYum" role="tab">Yum!</li>
+        <li class="nav-item navbar-link col-xs-4 mainnav" data-toggle="tab" href="#contentOrder" role="tab">Order</li>
+        <li class="nav-item navbar-link col-xs-4 mainnav" data-toggle="tab" href="#contentContact" role="tab">Contact</li>
     </ul>
 </div>
 <div class="tab-content col-lg-12">
 <div id="contentYum" class="tab-pane active">@Html.Partial("~/Views/Home/Partial/cakesPartial.cshtml", Model.cakePage)</div>
-<div id="contentOrder" class="tab-pane">@Html.Partial("~/Views/Home/Partial/orderPartial.cshtml", Model.cakePage)</div>
+<div id="contentOrder" class="tab-pane">@Html.Partial("~/Views/Home/Partial/orderPartial.cshtml", Model.order)</div>
 <div id="contentContact" class="tab-pane">@Html.Partial("~/Views/Home/Partial/contactPartial.cshtml", Model.contact)</div>
 </div>

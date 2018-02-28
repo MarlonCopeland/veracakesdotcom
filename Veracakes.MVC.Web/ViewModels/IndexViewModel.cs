@@ -10,9 +10,12 @@ namespace Veracakes.MVC.Web
         public IndexViewModel()
         {
             contact = new ContactViewModel();
+            order = new OrderViewModel();
         }
 
         public CakePage cakePage { get; set; }
         public ContactViewModel contact { get; set; }
+
+        public OrderViewModel order { get; set; }
     }
 }

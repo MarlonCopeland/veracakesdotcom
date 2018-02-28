@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\CakeTypeEnum.cs" />
     <Compile Include="Migrations\201710311826233_FirstMigrationEver.cs" />
     <Compile Include="Migrations\201710311826233_FirstMigrationEver.Designer.cs">
       <DependentUpon>201710311826233_FirstMigrationEver.cs</DependentUpon>
