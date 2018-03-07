@@ -173,6 +173,8 @@
     <Content Include="Content\images\cakePics\elmocake.jpg" />
     <Content Include="Content\images\cakePics\ponycake.jpg" />
     <Content Include="Content\images\cakePics\princesscake.jpg" />
+    <Content Include="Content\images\siteimages\cupcakeSprinkles.jpg" />
+    <Content Include="Content\images\siteimages\cupcakeCherry.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

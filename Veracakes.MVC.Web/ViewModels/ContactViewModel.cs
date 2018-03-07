@@ -7,7 +7,12 @@ namespace Veracakes.MVC.Web
 {
     public class ContactViewModel
     {
-      public string EmailAddress { get; set; }
-      public string Message { get; set; }
+        public string Name { get; set; }
+        public string EmailAddress { get; set; }
+        public string Message { get; set; }
+
+        //TODO: Model State Validation here!!! Everywhere!!
     }
+
+
 }
